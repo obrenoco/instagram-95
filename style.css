@@ -1,0 +1,118 @@
+@import "./src/input.css";
+
+@font-face {
+  font-family: windowsRegular;
+  src: url("./assets/fonts/Windows-Regular.ttf");
+}
+
+*::-webkit-scrollbar {
+  width: 22px;
+  height: 22px;
+  background: none;
+}
+
+::-webkit-scrollbar-button:vertical:start:increment,
+::-webkit-scrollbar-button:vertical:end:decrement,
+::-webkit-scrollbar-button:horizontal:start:increment,
+::-webkit-scrollbar-button:horizontal:end:decrement {
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-button {
+  width: 22px;
+  height: 22px;
+  background: silver;
+  box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px gray;
+  border: 1px solid;
+  border-color: silver #000 #000 silver;
+}
+
+*::-webkit-scrollbar-button:start {
+  background: url(./assets/icons/arrowUp.svg), silver;
+  background-size: 22px;
+}
+
+*::-webkit-scrollbar-button:end {
+  background: url(./assets/icons/arrowDown.svg), silver;
+  background-size: 22px;
+}
+
+*::-webkit-scrollbar-corner {
+  background: silver;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  cursor: url("./assets/icons/cursor.png"), auto;
+  height: 100dvh;
+}
+
+a,
+button {
+  cursor: url("./assets/icons/cursor-pointer.png"), pointer;
+}
+
+* {
+  font-family: windowsRegular;
+  letter-spacing: 0.2ch;
+  font-weight: 400;
+}
+
+main section {
+  color: white;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+h3 {
+  padding: 0;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+header {
+  background: linear-gradient(
+    90deg,
+    rgba(12, 28, 90, 1) 28%,
+    rgba(190, 204, 232, 1) 96%
+  );
+}
+
+.border-btn {
+  border-top: solid 2px white;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+  border-left: solid 2px white;
+}
+
+.border-btn--clicked {
+  border-top: solid 2px black;
+  border-left: solid 2px black;
+}
+
+.border-search {
+  border-top: solid 2px black;
+  border-right: solid 2px black;
+  border-bottom: solid 2px gray;
+  border-left: solid 2px black;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+q::before,
+q::after {
+  display: inline-block;
+}
+
+q {
+  quotes: "“" "”" "‘" "’" "“" "”";
+}
