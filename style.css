@@ -93,8 +93,13 @@ header {
 }
 
 .border-btn--clicked {
+  background: radial-gradient(circle, #b9b8b9 1px, transparent 1px);
+  background-color: #f4f4f4;
+  background-size: 3px 3px;
   border-top: solid 2px black;
   border-left: solid 2px black;
+  border-right: solid 2px white;
+  border-bottom: solid 2px white;
 }
 
 .border-search {

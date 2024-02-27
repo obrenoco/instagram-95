@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="style.css" />
     <title>Instagram</title>
   </head>
-  <body class="bg-white flex flex-col items-center">
+  <body class="bg-[#5d5d5d] flex flex-col items-center">
     <main
-      class="flex flex-col w-[100vw] h-[calc(100vh-54px)] z-10 pt-0.5 bg-gray border-white border-2 text-black overflow-hidden"
+      class="flex flex-col w-[100vw] h-[calc(100vh-44px)] z-10 pt-0.5 bg-gray border-white border-2 text-black overflow-hidden max-w-sm md:max-w-xs"
     >
       <header class="flex justify-between px-2 py-1">
         <div class="flex items-center gap-1">
@@ -68,7 +68,7 @@
 
       <div class="bg-black h-[3px] border-b-1 border-white"></div>
 
-      <div class="flex gap-4 py-2 px-3">
+      <div class="flex gap-2 py-2 px-3 text-sm">
         <div class="w-fit">
           <div class="h-20 w-20 bg-black rounded-full">
             <img
@@ -80,7 +80,7 @@
         </div>
         <div class="w-full flex justify-center">
           <div class="flex items-end justify-center gap-1 max-w-xs">
-            <div class="w-full flex flex-col gap-2">
+            <div class="w-full flex flex-col gap-1">
               <div
                 class="flex justify-center items-center [&>*]:flex [&>*]:flex-col [&>*]:items-center gap-2"
               >
@@ -99,14 +99,18 @@
               </div>
               <button class="border-btn px-4 w-full">+ Follow</button>
             </div>
-            <button class="border-btn px-2 h-fit">></button>
+            <button class="border-btn h-fit">
+              <img class="h-[23px]" src="./assets/icons/arrowDown.svg" alt="" />
+            </button>
           </div>
         </div>
       </div>
 
       <div class="px-2 py-4 pb-2 leading-5">
         <b class="text-[1.1rem]">Breno Romeiro</b>
-        <p>bsromeiro@gmail.com</p>
+        <p>
+          <a href="mailto:bsromeiro@gmail.com">bsromeiro@gmail.com</a>
+        </p>
         <p>
           <a target="_blank" href="https://breno-95.netlify.app/"
             >brenoromeiro.com</a
@@ -119,58 +123,85 @@
       <div
         class="flex items-center w-full h-fit gap-1 text-lg p-2 [&>*]:font-bold [&>*]:h-full [&>*]:flex [&>*]:items-center [&>*]:justify-center [&>*]:px-2 [&>*]:w-full"
       >
-        <button class="border-btn" alt="Windows button" text="Start">
-          <img src="./assets/icons/windows-icon.png" alt="" />
+        <button
+          class="border-btn--clicked bg-black btn-selected"
+          alt="Grid button"
+          text="Start"
+        >
+          <img src="./assets/icons/menu-grid.png" alt="" />
         </button>
-        <button class="border-btn" alt="Windows button" text="Start">
-          <img src="./assets/icons/windows-icon.png" alt="" />
+        <button
+          class="border-btn bg-[#c2c1c2]"
+          alt="Windows button"
+          text="Start"
+        >
+          <img src="./assets/icons/menu-list.png" alt="" />
         </button>
-        <button class="border-btn" alt="Windows button" text="Start">
-          <img src="./assets/icons/windows-icon.png" alt="" />
+        <button
+          class="border-btn bg-[#c2c1c2]"
+          alt="Windows button"
+          text="Start"
+        >
+          <img src="./assets/icons/menu-location.png" alt="" />
         </button>
-        <button class="border-btn" alt="Windows button" text="Start">
-          <img src="./assets/icons/windows-icon.png" alt="" />
+        <button
+          class="border-btn bg-[#c2c1c2]"
+          alt="Windows button"
+          text="Start"
+        >
+          <img src="./assets/icons/menu-contact.png" alt="" />
         </button>
       </div>
 
       <section
-        class="grid grid-cols-3 gap-[1px] bg-white overflow-auto overflow-x-hidden h-full border-l-black border-t-black border-2 mx-1"
+        class="grid grid-cols-3 gap-[1px] bg-gray-light overflow-auto overflow-x-hidden h-full border-l-black border-t-black border-2 mx-1 grid-rows-[min-content] [&>*>img]:h-full [&>*>img]:w-full"
       >
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
-        <div class="bg-black h-fit aspect-square w-full"></div>
+        <div class="bg-black h-fit aspect-square w-full">
+          <a href="https://karolinvanloon.com/" target="_blank">
+            <img src="./assets/images/portfolio-kvl.png" alt="" />
+          </a>
+        </div>
+        <div class="bg-black h-fit aspect-square w-full">
+          <a href="https://simcompliance.webflow.io/" target="_blank">
+            <img src="./assets/images/portfolio-sim.png" alt="" />
+          </a>
+        </div>
+        <div class="bg-black h-fit aspect-square w-full">
+          <a
+            href="https://blueprint-eats-scss-ten-9798679.vercel.app/"
+            target="_blank"
+          >
+            <img src="./assets/images/portfolio-bpe.png" alt="" />
+          </a>
+        </div>
+        <div class="bg-black h-fit aspect-square w-full">
+          <a href="https://breno-95.netlify.app/" target="_blank">
+            <img src="./assets/images/portfolio-breno.png" alt="" />
+          </a>
+        </div>
       </section>
     </main>
 
     <footer
-      class="flex justify-between items-center fixed bottom-0 bg-gray-light border-t-white border-2 w-full text-black p-1 h-[54px]"
+      class="flex justify-between items-center fixed bottom-0 bg-gray-light border-t-white border-2 w-full text-black p-1 h-[44px] max-w-sm md:max-w-xs"
     >
       <div
-        class="flex items-center w-full h-full gap-1 text-lg [&>*]:font-bold [&>*]:h-full [&>*]:flex [&>*]:items-center [&>*]:justify-center [&>*]:px-2 [&>*]:w-full"
+        class="flex items-center w-full h-[35px] gap-1 text-lg [&>*]:font-bold [&>*]:h-[35px] [&>*]:flex [&>*]:items-center [&>*]:justify-center [&>*]:px-2 [&>*]:w-full [&>*]:rounded-sm"
       >
-        <button class="border-btn" alt="Windows button" text="Start">
-          <img src="./assets/icons/windows-icon.png" alt="" />
+        <button class="border-btn" alt="House button" text="Start">
+          <img src="./assets/icons/menu-house.png" alt="" />
+        </button>
+        <button class="border-btn" alt="Globe button" text="Start">
+          <img src="./assets/icons/menu-globe.png" alt="" />
+        </button>
+        <button class="border-btn" alt="Camera button" text="Start">
+          <img src="./assets/icons/menu-camera.png" alt="" />
         </button>
         <button class="border-btn" alt="Windows button" text="Start">
-          <img src="./assets/icons/windows-icon.png" alt="" />
+          <img src="./assets/icons/menu-heart.png" alt="" />
         </button>
-        <button class="border-btn" alt="Windows button" text="Start">
-          <img src="./assets/icons/windows-icon.png" alt="" />
-        </button>
-        <button class="border-btn" alt="Windows button" text="Start">
-          <img src="./assets/icons/windows-icon.png" alt="" />
-        </button>
-        <button class="border-btn" alt="Windows button" text="Start">
-          <img src="./assets/icons/windows-icon.png" alt="" />
+        <button class="border-btn--clicked" alt="Profile button" text="Start">
+          <img src="./assets/icons/menu-profile.png" alt="" />
         </button>
       </div>
     </footer>
